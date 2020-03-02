@@ -161,7 +161,8 @@ public class RNPushNotificationHelper {
             String title = bundle.getString("title");
             if (title == null) {
                 ApplicationInfo appInfo = context.getApplicationInfo();
-                title = context.getPackageManager().getApplicationLabel(appInfo).toString();
+                title = "New message";
+                // title = context.getPackageManager().getApplicationLabel(appInfo).toString();
             }
 
             int priority = NotificationCompat.PRIORITY_HIGH;
